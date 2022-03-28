@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+/*body bkg color*/
+
+body{
+    
+    /*background-image: url("/lesson2/ASSETS/bkg-preston-full-image.jpg");*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+   
+}
+
+
+/*defined bkg header color*/
+
+header{
+    padding: auto;
+    margin-top: 30px;
+    text-align: center;
+       
+    }
+
+
+/*menu css settings*/
+/* Small/Phone View ***************/
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	
+    
+}
+.navigation {
+	list-style: none;
+	padding:0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+    font-family:'Poppins', sans-serif;;
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+    background: rgba(255, 168, 6, 0.4);
+	font-weight: 600;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+    
+}
+
+.navigation a.ham::before {
+	content: " ";
+}
+
+.navigation a:hover {
+	color: white;
+	background-color: rgba(255, 168, 6, 0.8);
+}
+
+
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::before {
+	content: "❌ ";
+    
+}
+
+/* Media Query for medium+ views */
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+nav {
+	margin: 0 auto;
+	max-width: 760px;
+	
+    
+}
+
+
+/*logo link position*/
+
+.logo a{
+    
+    width: 300px;
+    display: flex;
+    margin:auto;
+    height: 80px;
+    text-indent: -999999999999px; /*sent text away of the screen*/
+    background-image: url("/lesson2/ASSETS/logoweathershadow.png");
+    background-repeat: no-repeat;
+    background-size: 300px;
+    background-position: center;
+    position: relative;
+    top: -20px;
+    
+}
+
+.logo a:hover{
+
+    background-image: url("/lesson2/ASSETS/logoweathernowhover.png");
+    
+}
+
+.terms{
+    color: white;
+      
+}
+
+/***********MAIN section********/
+
+.main-box-one h1{
+
+    color: white;
+    text-align: center;
+    font-size: 55px;
+}
+
+.main-box-one img{
+
+    width: 350px;
+}
+
+.main-box-one{
+
+    justify-content: center;
+    
+    
+  
+}
+
+.features{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    justify-items: center;
+    
+    align-content: center;
+    
+}
+
+.features figure{
+    width: 350px;
+    margin: auto;
+    
+}
+
+.features figure img{
+    width: 350px;
+}
+
+.text-idaho h2, p{
+    color: #ffc300;
+    margin: auto;
+    width: 350px;
+}
+
+.text-idaho h2{
+    font-size: 35px;
+}
+
+
+
+/******MAIN BOX TWO********/
+
+.main-box-two{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position:relative;
+    left: auto;
+    right: auto;
+    justify-content: center;
+    margin-bottom: 15px;
+
+
+    }
+
+.title-h1-box-two h1{
+   
+    background: #f88d00;
+    color: white;
+    text-align:center;
+    font-size: 35px;
+    padding: 8px;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: -0.1px;
+    justify-content: center;
+}
+
+.title-h1-box-two {
+    opacity: 0.8;
+}
+
+
+
+.main-box-two img{
+
+    width: 150px;
+}
+
+.main-box-two img:hover{
+
+    background: #0a0a0a;
+    opacity: 0.5;
+    
+}
+
+
+
+.main-box-two h2{
+    color: white;
+    background: #f88d00;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+    padding: 5px;
+    
+    
+}
+
+.main-box-two h2:hover{
+
+    opacity: 0.5;
+}
+
+
+
+/********MAIN-box  Three****/
+.main-box-three{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 5px;
+    }
+
+.main-box-three img{
+    width: 400px;
+    
+}   
+
+.title-h1-box-three ,h1{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/********section gmaps***********/
+
+.gmaps{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    
+   
+}
+
+.text-weather-business h2{
+    color:white
+    
+      
+    
+}
+
+.text-weather-business p{
+    color:white
+    
+      
+    
+}
+
+
+
+
+
+
+
+/**********FOOTER************/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: white;
+    background:#0d1226;
+    text-align: center;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+footer img{
+display: flex;
+margin: 0 auto;
+padding-top: 10px;
+padding-bottom: 20px;
+width: 350px;
+    
+}
+
+.social-media img{
+    display: inline-flex;
+    
+    margin: 0 auto;
+    width: 50px;
+    padding: 2px;
+    margin-top:10px ;
+    
+    }
+
+.social-media img{
+    border-radius: 12px;
+}
+
+.social-media  img:hover{
+
+    background: #f88d00;
+}
+
+
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact-info a{
+    color: #f88d00;
+    
+    padding: 3px;
+    padding-bottom: 15px;
+    text-decoration-line: none;
+}
+
+.contact-info a:hover{
+    
+    text-decoration: none;
+    color: white;
+}
+
+.contact-info p{
+    padding-bottom: 5px;
+}
+
+.info{
+    color: white;
+}

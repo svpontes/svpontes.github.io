@@ -1,0 +1,153 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h3, h4, h5, h6 {
+    
+    background-color: #000205;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    
+    }
+    
+body {
+        max-width: 1280px;
+        margin:  auto;
+        display: block;
+}
+header {
+    
+    background-color: #000203;
+    padding: 0.1em;
+    
+    border-radius: 0.5em;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-top: 1em; 
+}
+
+p{
+    padding-left: 1em;
+    color: rgb(71, 70, 70);
+    line-height: 1.2;
+    }
+
+a{
+    padding-left: 1em;
+}
+
+img{
+padding-top: 10px;
+
+}
+h3 {
+    
+    border-radius:0.5em ;
+    padding: 1em;
+}
+
+h2 {
+    
+    margin-top: -5px;
+    
+}
+li {
+    
+    margin-left: 2em;
+}
+article {
+    margin-top: 0.5em;
+}
+article img {
+    width: 100%;
+}
+
+footer {
+    
+    background-color: #000000;
+    text-align: center;
+    padding: 0.2em;
+    border-radius: 0.5em;
+    
+}
+
+footer a {
+    color: #8f8f90;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+a:hover {
+    
+    color: #f11e5d;
+    text-decoration: none;
+}
+
+.nav-links, p a{
+    padding: 10px;
+}
+
+.footer  p {
+    color: rgb(255, 255, 255);
+    margin-top: 2px;
+    
+}
+
+footer {      
+    background-color: #070500;
+    text-align: center;        
+    padding: 5px 0;  
+}
+
+#footer_info {     
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+}
+/* Define last update info in the right spot and color the font */
+#footer_update {     
+    font-size: .83em;
+    color: white;
+    margin-top: 0;    
+}
+footer  p {
+    color: rgb(255, 255, 255);
+    margin-top: 2px;
+    
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+   
+}
+main p {
+    
+    font-size: 20px;
+
+
+}
+
+
+@media screen and (max-width: 900px) { 
+    /* beginning of media query for medium sized devices */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    }
+
+@media screen and (max-width: 600px) { 
+    /* beginning of media query for small devices */
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    }

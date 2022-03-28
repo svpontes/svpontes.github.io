@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-family: 'League Gothic', sans-serif;
+  }
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+    
+    padding: 7px;
+  }
+  
+  a:hover {
+    
+    color: #D9B310;
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: #0d1226;
+    height: 10vh;
+   
+  }
+  
+  img{
+      padding-top: 8px;
+  }
+  
+  header{
+    background: #0d1226;
+  }
+  
+  h1{
+  
+  height: 18px;
+  color: rgb(5, 0, 0);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  
+  }
+  
+  wireframe{
+  
+  box-sizing: 1fr 1fr;
+  }
+  
+  .wireframe img{
+  
+  width: 50%;
+  justify-content: space-between;
+  
+  }
+  
+  main .wireframe img{
+  
+  display: flex;
+  margin: auto;
+  align-items: center;
+  
+  }
+  
+  .header, img{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+  
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    color: #fff;  
+    letter-spacing: 1px;
+    margin-left: auto;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+  }
+  
+  footer{
+    height: 60px;
+    background-color: #0d1226;
+    color: #ffff;
+    text-align: center;
+    padding: 20px;
+    
+  }
+  
+  .nav-footer{
+  
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    
+  }
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: #23232e;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+  
+  

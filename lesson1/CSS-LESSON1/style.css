@@ -1,0 +1,136 @@
+/* set a max width for the content and the backgroung color for the screen */
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    
+    
+}
+/* set screen background color, center text, and put in grid (color was rgb(251, 192, 45))*/
+header {    
+    text-align: center;    
+    background-color: #000000;     
+    margin-top: 1em; 
+    line-height: 110px;   
+}
+/* put portrait in the right spot and a shadow border effect on the picture */
+img {    
+    margin-top: 21px;      
+    box-sizing: border-box; 
+    width: auto;
+    
+
+}
+/* set the font family, size, color, and put in right spot (was #009688) */
+h1 {
+    
+    font-size: 1.5em;
+    color: #ffffff;
+    margin: 0;     
+}
+/* set the heading colors, size & font family */
+h2 {
+    
+    font-size: 1em;
+    color: #1976D2;      
+}
+/* set the background color and grid layout for the body of the content*/
+main {
+   
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 15px;   
+}
+/* put the subtitle in the right spot */
+#title {      
+    box-sizing: border-box;    
+    margin-bottom: 0;   
+}
+/* put a line under the sub title */
+#line { 
+    width: 90%;   
+    border-bottom: 2px solid rgb(27, 86, 182);
+    padding-top: 10px;
+    padding-left: -20px;    
+}
+
+/* change color on hover */
+a:hover {
+    
+    color: #f11e5d;
+    text-decoration: none;
+}
+/* Define color links*/
+a {
+    color: #0950ad;
+    text-decoration: none;
+    list-style: none;
+    
+
+}
+
+footer a {
+    color: #8f8f90;
+}
+
+.nav-links, p a{
+    padding: 10px;
+}
+
+/* Define footer background color */
+footer {      
+    background-color: #070500;
+    text-align: center;        
+    padding: 5px 0;  
+}
+
+#footer_info {     
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+}
+/* Define last update info in the right spot and color the font */
+#footer_update {     
+    font-size: .83em;
+    color: white;
+    margin-top: 0;    
+}
+footer  p {
+    color: rgb(255, 255, 255);
+    margin-top: 2px;
+    
+}
+
+
+/*mediaquery features for medium screen*/
+@media only screen and (min-width: 32.5em) {
+    h1 {     
+        font-size: 2.em;            
+    }
+    /* set the heading colors, size & font family */
+    h2 {      
+        font-size: 1.5em;    
+    }  
+    header, footer {        
+        border-radius: 0.75em;         
+    }
+    img { 
+        float:right; 
+        margin-right: 13px;                
+        border-radius:8%;  
+        width: 20%;                   
+    }        
+}
+/*mediaquery  feature for large screen*/
+@media only screen and (min-width: 69em) {
+    h1 {     
+        font-size: 3.5em;          
+    }
+    /* set the heading colors, size & font family */
+    h2 {      
+        font-size: 2em;     
+    }   
+}

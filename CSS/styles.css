@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
+}
+/*body bkg color*/
+
+body{
+    background: white;
+    
+}
+
+
+/*defined bkg header color*/
+
+header{
+
+    background: #0d1226;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+    
+}
+
+/*sections bkg color*/
+
+section{
+    background: white;
+    
+    margin: 20px 40px 20px 40px;
+    padding-left: 20px;
+    
+}
+
+/*footer bkg color*/
+
+footer{
+
+    background: #0d1226;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
