@@ -150,7 +150,60 @@ nav {
     text-align: center;
 }
 
+/*main gallery*/
+/***********MAIN section********/
 
+.principal img[data-src]{
+    filter: blur(2em);
+    
+    
+    
+  }
+
+.principal{
+    width: 80%;
+    
+    margin: 2rem auto;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 5vw);
+    gap: 0.9em;
+    
+}
+
+.imgGaleria{
+    
+    width: 100%;
+    
+    display: block;
+    background: cover;
+}
+
+.itemGaleria{
+    overflow: hidden;
+}
+
+.item01{
+    grid-column:1/span 2;
+    grid-row:1/span 5;
+}
+img{
+    transition: 0.5s;
+
+}
+
+img:hover{
+    transform: scale(1.2);
+}
+
+figcaption{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600px;
+}
 
 
 
