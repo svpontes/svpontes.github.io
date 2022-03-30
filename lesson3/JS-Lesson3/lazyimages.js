@@ -29,6 +29,3 @@ else {
       loadImages(img);
     });
   }
-
- 
-  
