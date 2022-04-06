@@ -19,6 +19,7 @@
 
     <!-- important: the normalize.css has been provided from the main folder WDD230 -->
     <link rel="stylesheet" href="/CSS-Normalize/normalize.css">
+    <link rel="stylesheet" href="/lesson5/JS-lesson5/stormcenter.css"
 
 </head>
 
@@ -43,23 +44,44 @@
             
         </nav>
     </header>
+    <section class="main-box-one">
+        
+        <h1>Report Weather Event Form</h1>
+        <!--<section class="features">
+            <figure>
+                <img src="/lesson2/ASSETS/mapgridtransparent.png" alt="image of us map">
+            </figure>
+                <div class="text-idaho">
+                    <h2>Idaho Adventure, Natural Beauty Everywhere ou Go, Especialy Preston.</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, voluptatum totam illo laborum sit quae error facilis harum non provident rem reprehenderit ipsa fuga repudiandae! Velit distinctio aliquid ipsa deserunt!</p>
+                </div>
+            
+            <figure>
+                <img src="/lesson2/ASSETS/4seasons.png" alt="image of season options">
+            </figure>
+      
+        </section>-->
 
-    <!--FORMULARIO
+</section>
+<section class="title-h1-box-two">
+    
+    <h1>Fill Out The From</h1>
+    
+</section>
     
         <main>
 
-        <h2>Report Weather Event Form</h2>
-
+        
         <form method="get" action="thanks.html">
 
             <fieldset>
 
                 <legend>Personal Information</legend>
                 <label class="top">First Name* <input type="text" name="fname" minlength="5" required></label>
-                <label class="top"> Last Name* <input type="text" name="lname" minlength="5" required></label>
-                <label class="top">Email <input type="email" name="email" placeholder="person@gmail.com"></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1234567890" required></label>
-                <label class="top">Zip Code* <input type="text" name="zip" placeholder="12345" title="five numbers, no spaces." pattern="[\d]{5}" required></label>
+                <label class="top"> Last Name * <input type="text" name="lname" minlength="5" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="emailname@hotmail.com"></label>
+                <label class="top">Phone * <input type="tel" name="phone" placeholder="1234567890" required></label>
+                <label class="top">Zip Code <input type="text" name="zip" placeholder="12345" title="five numbers, no spaces." pattern="[\d]{5}" required></label>
 
             </fieldset>
     
@@ -72,8 +94,8 @@
 
                     <datalist id="event-Types">
 
-                        <option value="Flash Flood">
-                        <option value="Hail">
+                        <option value="snowstorm">
+                        <option value="flood">
                         <option value="Hurricane">
                         <option value="Thunder Storm">
                         <option value="Tornado">
@@ -82,7 +104,7 @@
 
                 </label>
 
-                <label class="sbs">Storm Severity (1-10) <input type="range" name="Severity" min="1" max="10" value="5" class="slide" id="range" list="rank">
+                <label class="stormbseverity">Storm Severity (1-10) <input type="range" name="Severity" min="1" max="10" value="5" class="slide" id="range" list="rank">
 
                 <span id="numbers"></span>
 
@@ -123,109 +145,28 @@
 
                 <legend>Danger Level</legend>
 
-                <label class="top">Are people in danger because of the event?</label>
-                <label class="sbs"><input type="radio" name="danger" value="yes"> Yes</label>
-                <label class="sbs"><input type="radio" name="danger" value="maybe"> Maybe</label>
-                <label class="sbs"><input type="radio" name="danger" value="no"> No</label>
+                <label class="top">Is there anyone in danger at this point?</label>
+                <label class="stormbseverity"><input type="radio" name="danger" value="yes"> Yes</label>
+                <label class="stormbseverity"><input type="radio" name="danger" value="maybe"> I am not sure</label>
+                <label class="stormbseverity"><input type="radio" name="danger" value="no"> No</label>
                 <label class="top">Comments: </label>
                 <label class="top"><textarea class="inputbox" name="user_message"></textarea></label>
                 
             </fieldset>
-            <input type="submit" value="Report Weather Event" class="submitBtn">
+            
     
+        </form>
+        <form class="button">
+            <input type="submit" value="Report Events" class="submitB">
         </form>
 
         <br><br>
-    -->
-    <section class="main-box-one">
-        
-            <h1>Accurate Weather<br>Information You Deserve!.</h1>
-            <section class="features">
-                <figure>
-                    <img src="/lesson2/ASSETS/mapgridtransparent.png" alt="image of us map">
-                </figure>
-                    <div class="text-idaho">
-                        <h2>Idaho Adventure, Natural Beauty Everywhere ou Go, Especialy Preston.</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, voluptatum totam illo laborum sit quae error facilis harum non provident rem reprehenderit ipsa fuga repudiandae! Velit distinctio aliquid ipsa deserunt!</p>
-                    </div>
-                
-                <figure>
-                    <img src="/lesson2/ASSETS/4seasons.png" alt="image of season options">
-                </figure>
-          
-            </section>
-    
-    </section>
-    <section class="title-h1-box-two">
-        
-        <h1>Week Forecast by Weather Now</h1>
-        
-    </section>
-    <section class="main-box-two">
-                   
-        <figure>
-            <h2>SUNDAY</h2>
-            <img src="/lesson2/ASSETS/forecast-sunday-img.png" alt="image-forecast-sunday">
-        </figure>
-        <figure>
-            <h2>MONDAY</h2>
-            <img src="/lesson2/ASSETS/forecast-monday-img.png" alt="image-forecast-monday">
-        </figure>
-        <figure>
-            <h2>TUESDAY</h2>
-            <img src="/lesson2/ASSETS/forecast-TUESday-img.png" alt="image-forecast-tusday">
-        </figure>
-        <figure>
-            <h2>WEDNESDAY</h2>
-            <img src="/lesson2/ASSETS/forecast-wednesday-img.png" alt="image-forecast-wednesday">
-        </figure>
-        <figure>
-            <h2>THURSDAY</h2>
-            <img src="/lesson2/ASSETS/forecast-thursday-img.png" alt="image-forecast-thursday">
-        </figure>
-        <figure>
-            <h2>FRIDAY</h2>
-            <img src="/lesson2/ASSETS/forecast-friday-img.png" alt="image-forecast-friday">
-        </figure>
-        <figure>
-            <h2>SATURDAY</h2>
-            <img src="/lesson2/ASSETS/forecast-saturday-img.png" alt="image-forecast-seturday">
-        </figure>
 
-              
-    </section>
-
-    <section class="title-h1-box-three">
-        <h1>Weather Today - Preston, ID</h1> 
-    </section>
-    
-    
-    <section class="main-box-three">
-       
-      
-        
-
-       <img src="/lesson2/ASSETS/wheathertoday-one.png" id="one" onmouseover="this.src='/lesson2/ASSETS/wheathertoday-one-hover.png'" onmouseout="this.src='/lesson2/ASSETS/wheathertoday-one.png'"/>
-
-       <img src="/lesson2/ASSETS/wheathertoday-two.png" id="two" onmouseover="this.src='/lesson2/ASSETS/wheathertoday-two-hover.png'" onmouseout="this.src='/lesson2/ASSETS/wheathertoday-two.png'"/>> 
-    </section>
-
-    <section class="gmaps">
-        <div >
-            <h1>Preston,ID Map </h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.72628252308!2d-111.91534459120224!3d42.099805312055004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20EUA!5e0!3m2!1spt-PT!2spt!4v1647526929379!5m2!1spt-PT!2spt" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class="text-weather-business">
-            <h2>How The Weather<br>Can Affect Business </h2>
-            <p><br>Weather significantly impacts businesses in different ways ranging from products, employees, customers to property. It is important for a business to stay prepared for challenging situations that could be caused by adverse weather conditions. All types of businesses can be directly or indirectly affected by bad and good weather. Below is a discussion of some of the ways your business can be affected by weather. <br><br>The prices of most commodities fluctuate depending on weather conditions. For instance, businesses based on agricultural productions are directly affected by seasonal yields. Some raw materials are expensive when they are not easily available during certain weather conditions. If you understand and predict such fluctuations, it can help in your financial projections.</p><br>
-        </div>
-    </section>
-  
     <footer>
         
         <img src="/lesson2/ASSETS/logofooter.png"></
        
-        <p>&copy;  2022<span id="copyright"> </span>  Sergio Vieira Pontes | Lisbon - Portugal  | WDD230  <a class="terms" href="#" target="_blank">Terms of Use</a></p>
+        <p>&copy; <span id="copyright"> </span>  Sergio Vieira Pontes | Lisbon - Portugal  | WDD230  <a class="terms" href="#" target="_blank">Terms of Use</a></p>
        
         <section class="contact-info">
        
