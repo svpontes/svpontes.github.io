@@ -130,7 +130,7 @@ h2 {
 	color: #ffffff;
 }
 
-/* Table styling and layout with no extras*/
+
 table,th,td {
 	border: thin solid rgb(255, 253, 253);
 	border-collapse: collapse;
@@ -143,7 +143,7 @@ td {
 	text-align: center;
 }
 
-/* Column styling and layout */
+
 .column {
 	column-count: 6;
 	column-gap: 0;
@@ -155,7 +155,7 @@ td {
 	background-color: #ffffff;
 }
 
-/* Grid */
+
 .grid { 
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
