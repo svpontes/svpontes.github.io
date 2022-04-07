@@ -3,6 +3,19 @@ main {
 	margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+body{
+    
+    background-image: url("/lesson6/assets/bkg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+   
+}
+
 main h1 {
 	text-align: center;
 	font-size: 4.5rem;
@@ -82,13 +95,13 @@ h2 {
 
 .flex {
 	display: flex;
-	
+	padding-bottom: 25px;
 	flex-flow: row wrap;
 }
 
 .flex-col {
 	flex: 1 1 auto;
-	background-color: #e28800;
+	background-color: #9d5e00;
     padding-bottom: 5px;
 }
 .flex-col, .column-col, .grid-col {
@@ -97,7 +110,7 @@ h2 {
 }
 .flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
 	opacity: 0.75;
-	background-color: #f18800; 
+	background-color: #d4d2cf; 
 	color: #ffffff;
 }
 
@@ -114,6 +127,7 @@ h2 {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 25px;
+    padding-top: 25px;
 }
 
 .data {
@@ -181,14 +195,24 @@ td {
 }
 
 #travel p{
-color: white;
+color: rgb(255, 255, 255);
 width: 800px;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 text-align: justify;
 padding-bottom: 25px;
+
+
+}
+
+.article{
+    
+    background-color: rgb(226, 104, 3);
+    opacity: 0.9;
+    width: 810px;
 }
 
 iframe{
+    padding-top: 15px;
     width: 800px;
     height: 400px;
 }
