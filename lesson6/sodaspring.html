@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Assignment portal for Sergio Pontes WDD 230:
+     Web Frontend Development at Brigham Young University - Idaho">
+    <title>Sergio Pontes - Assignment Portal</title>   
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+            
+    <link rel="stylesheet" href="/lesson2/CSS-PRESTON/prestonCSSDENOVO.css">
+
+    <!-- important: the normalize.css has been provided from the main folder WDD230 -->
+    <link rel="stylesheet" href="/CSS-Normalize/normalize.css">
+    
+    <link rel="stylesheet" href="/lesson5/JS-lesson5/stormcenter.css">
+    <link rel="stylesheet" href="/lesson5/JS-lesson5/prestonapi.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <ul>
+        <li class="logo"><a href="preston.html">logo-weather-now</a></li>
+    </ul>
+            
+        <nav>
+            <ul class="navigation">
+                <li><a class="ham" href="#">&#9776;</a></li>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="#">Soda Spring</a></li>
+                <li ><a href="#">Fish Haven</a></li>
+                <li c><a href="#">Storm Center</a></li>      
+                <li ><a href="#">Gallery</a></li>
+               
+            </ul>
+            
+        </nav>
+    </header>
+    <main>
+        
+        <h1>Preston Idaho</h1>
+        <div class="herodiv">
+
+            <picture id="image-responsive">
+                    <source media="(max-width: 500px)" srcset="/lesson5/assets/weather500.jpg">
+                    <source media="(max-width: 800px)" srcset="/lesson5/assets/weather800.jpg">
+                    <source media="(max-width: 1200px)" srcset="/lesson5/assets/weather1200.jpg" >
+                    <img src="/lesson5/assets/weather.jpg" alt="Preston Idaho Sunny Day">
+                    
+            </picture>
+            <section class="stats">
+                <h2>Weather Summary</h2>
+                <p class="windchill-text-size">Currently:<span id="temperature-Currently"></span> &deg;F </p>
+                <p class="windchill-text-size">Description:<span id ="description"></span></p>
+                <p class="windchill-text-sizet">Wind Chill:<span id ="windChill1"></span> Km/h</p>
+                <p class="windchill-text-size">High:<span id ="high-temperature1"></span> &deg;F</p>
+                <p class="windchill-text-size">Humidity:<span id ="humidity1"></span> %</p>
+                <p class="windchill-text-size">Wind Speed:<span id ="wind-speed1"></span> mph</p>
+            </section>
+        </div>
+
+        <h2>Five Day Forecast</h2>
+        <div class="flex"></div>
+
+
+        <div class="article">
+                <div id="travel">
+                    <h2>Travel to Preston - Id</h2>
+                    <p >Preston, Idaho is one of the best kept secrets of the West.  Nestled on the Idaho side of beautiful Cache Valley and surrounded by towering mountains on each side, it is unbeatable for recreation opportunities, has that small town feeling, and is close to whatever you need. Discover the natural beauty & recreation of Preston’s outdoors. Explore the adventures awaiting for you in Preston City Parks. Carnivals, rodeos, festivals & fun await you in Preston.</p>
+                </div>
+                <img class="image-trave" src="/lesson5/assets/trip.jpg"/>
+          </div>
+
+        <div class="preston-contact">
+            
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.726282523094!2d-111.91534459120224!3d42.09980531205498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263%2C%20USA!5e0!3m2!1sen!2spt!4v1649296687168!5m2!1sen!2spt"></iframe> 
+            </div>
+            
+
+
+        </div>
+
+
+
+    </main>
+
+        <br><br>
+
+    <footer>
+        
+        <img src="/lesson2/ASSETS/logofooter.png"></
+       
+        <p>&copy; <span id="copyright"> </span>  Sergio Vieira Pontes | Lisbon - Portugal  | WDD230  <a class="terms" href="#" target="_blank">Terms of Use</a></p>
+       
+        <section class="contact-info">
+       
+            <p>Contact Information:</p>
+            
+            <a href="mailto:">weathernow@weathernow.com</a>
+            <p>Phone Main Office +1 250 215-5656</p>
+        </section>
+       
+        <section class="social-media">
+            <a href="https://www.facebook.com" target="_blank"><img src="/lesson2/ASSETS/facebookPNG.png" alt="instagram-logo-link"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="/lesson2/ASSETS/instaPNG.png" alt="instagram-logo-link"></a>
+            <a href="https://www.in.com" target="_blank"><img src="/lesson2/ASSETS/inPNG.png" alt="linkedin-logo-link"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="/lesson2/ASSETS/Twitter-LogoPNG.png" alt="tweeter-logo-link"></a>
+        </section> 
+        <p class="info" id="currentDate"></p>   
+    </footer>
+    <script src="/lesson2/JSPRESTON/currentDate.js" defer></script>
+    <script src="/lesson2/JSPRESTON/hamburgerMenu.js" defer></script>
+    <script src="weather-api.js"></script>
+    <script src="apiforweather.js"></script>
+</body>
+</html>       
