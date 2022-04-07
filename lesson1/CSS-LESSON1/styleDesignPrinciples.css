@@ -151,3 +151,26 @@ main p {
         grid-template-columns: 1fr;
     }
     }
+
+    
+.navigation-footer a{
+    
+    text-decoration: none;
+    color: rgb(247, 133, 3);
+    padding-bottom: 5px;
+}
+
+.navigation-footer a:hover{
+    
+    
+    color: white;
+  
+}
+
+.navigation-footer li{
+    display: inline-block;
+    padding: 5px;
+    
+    text-decoration: none;
+    list-style: none;
+}
