@@ -1,0 +1,194 @@
+main {
+	max-width: 820px;
+	margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main h1 {
+	text-align: center;
+	font-size: 4.5rem;
+	
+	
+}
+
+.herodiv {
+
+	margin: 10px auto;
+	position: relative;
+}
+.herodiv img {
+    width: 100%;
+}
+h2 {
+	margin: 0 0 .5rem;
+    padding-bottom: 5px;
+	
+}
+
+p {
+	margin: 0 auto;
+    color: #ffffff;
+    padding: 2px;
+    font-weight: 600;
+}
+
+.stats {
+	display:block;
+	position:absolute;
+	top: 45px;
+	left: 50px;
+	background: radial-gradient(#eee, #d49203);
+	padding: 2rem;
+	box-shadow: 0 0 30px #333;
+	opacity: 0.9;
+	word-wrap: break-word;
+}
+
+.stats span {
+	font-style: italic;
+	font-weight: 700;
+}
+
+@media only screen and (max-width: 480px) {
+	main {
+		display: block;
+	}
+	.herodiv {
+		position: static;
+	}
+	.stats {
+		width: 100%;
+		position: static;
+		opacity: 1.0;
+	}
+}
+
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Acme&display=swap");
+
+h1 {
+	font-size: 1.5em;
+	
+}
+h2 {
+	font-size: 2em;
+	color: #ffffff;
+    align-items: center;
+	
+	margin-left: 10px;
+}
+
+
+.flex {
+	display: flex;
+	
+	flex-flow: row wrap;
+}
+
+.flex-col {
+	flex: 1 1 auto;
+	background-color: #e28800;
+    padding-bottom: 5px;
+}
+.flex-col, .column-col, .grid-col {
+	
+	text-align: center;
+}
+.flex-col:hover, td:hover, .column-col:hover, .grid-col:hover {
+	opacity: 0.75;
+	background-color: #f18800; 
+	color: #ffffff;
+}
+
+
+.col-head {
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	text-align: center;
+}
+
+.article img {
+	
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+.col-head,th {
+	font-weight: 600;
+	font-size: 1rem;
+	background-color: #d98601;
+	color: #ffffff;
+}
+
+/* Table styling and layout with no extras*/
+table,th,td {
+	border: thin solid rgb(255, 253, 253);
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+td {
+	background-color: #ffc300;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+/* Column styling and layout */
+.column {
+	column-count: 6;
+	column-gap: 0;
+}
+.column img {
+	width: 50%;
+}
+.column-col {
+	background-color: #ffffff;
+}
+
+/* Grid */
+.grid { 
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(50px,1fr));
+}
+.grid-col {
+	background-color: #ffffff;
+}
+
+.image-day{
+	border-radius: 40px;
+}
+
+.windchill-text-size{
+	font-size: 1em;
+}
+
+#travel h2{
+    margin: 0 auto;
+    text-align: center;
+    padding:5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#travel p{
+color: white;
+width: 800px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+text-align: justify;
+padding-bottom: 25px;
+}
+
+iframe{
+    width: 800px;
+    height: 400px;
+}
